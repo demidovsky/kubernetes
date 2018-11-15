@@ -8,7 +8,3 @@ process.on('message', () => {
 
   process.send({ json });
 });
-
-
-
-

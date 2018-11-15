@@ -1,13 +1,13 @@
 const converter = require('xml-js');
 
-function parseXML (xml) {
-  const options = {
-    attributesKey: '$',
-    textKey: '_',
-    compact: true,
-    // alwaysArray: true
-  };
+const options = {
+  attributesKey: '$',
+  textKey: '_',
+  compact: true,
+  // alwaysArray: true
+};
 
+function parseXML(xml) {
   return converter.xml2js(xml, options);
 }
 
