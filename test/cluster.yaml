@@ -1,0 +1,11 @@
+config:
+  target: 'http://35.232.208.234:3000'
+  http:
+    timeout: 60
+  phases:
+    - duration: 60
+      arrivalRate: 10
+scenarios:
+  - flow:
+    - get:
+        url: "/load"
