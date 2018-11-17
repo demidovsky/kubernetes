@@ -1,5 +1,5 @@
 config:
-  target: 'http://35.232.239.104:3000'
+  target: 'http://35.204.173.51:3000'
   http:
     timeout: 60
   phases:
@@ -8,4 +8,4 @@ config:
 scenarios:
   - flow:
     - get:
-        url: "/load"
+        url: "/queue"
